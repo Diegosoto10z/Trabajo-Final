@@ -1,0 +1,72 @@
+workspace {
+        model {
+        
+        ciudadano = person   "Ciudadano"  "Usuario que es redidente de un distrito" 
+        encargado  = person "Encargado Municipal" " Usuario que se encarga de gestionar un sector municipal"  "Encargado"
+        gobiernos = person "Gobiernos Locales"  " Municipios que pertenecen a Lima Metropolitana" "GOBIERNO"
+        medios = person "Medios De comunicacion" "Medios que permitan informar sobre problemas o noticas en Lima" "MEDIOS"
+        softwareSystem = softwareSystem "Tu voz se escucha " "Plataforma que permite la union y comunicacion entre los ciudadnos distritales en Lima Metropolitana y sus respectivos municipios" "SOLUCION"
+        tarjetas  = softwareSystem "Tarjetas credito/debito" " Medios de pago disponibles para tramites dentro de la plataforma" "TARJETAS"
+        redes = softwareSystem "Redes Sociales" "Funcionalidad para poder compartir noticias o informes de la plataforma hacia redes sociales populares" "REDES"
+        
+        
+        ciudadano -> softwareSystem "Hace uso de "
+        encargado -> softwareSystem "Informa a travez de "  
+        gobiernos -> softwareSystem "Conforma"
+        medios -> softwareSystem " Participa"
+        softwareSystem -> tarjetas "Procesamiento de pagos"
+        softwareSystem -> redes "Publicacion de noticias o informes "
+        }
+        
+        
+        
+       
+        views {
+        
+         systemContext  softwareSystem {
+         include *
+      
+     }
+         
+        styles {
+            element "Encargado" {
+                 
+                background "#26cf48" 
+                color "#ffffff" 
+            }
+            
+            element "GOBIERNO" {
+                 
+                background "#FF00FF" 
+                color "#ffffff" 
+            }
+            
+            element "MEDIOS" {
+                 
+                background "#DAA520" 
+                color "#ffffff" 
+            }
+            element "SOLUCION" {
+            
+                background "#008000" 
+                color "#ffffff"
+            }
+            element "TARJETAS" {
+            
+                background "#8B4513" 
+                color "#ffffff"
+            }
+             element "REDES" {
+            
+                background "#00BFFF" 
+                color "#ffffff"
+            }
+        }
+        
+        
+          theme default   
+        }
+       
+        
+        
+}
