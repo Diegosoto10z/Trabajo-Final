@@ -17,3 +17,22 @@ D:\CICLO 4 FABRIZIO\DISEÑO Y PATRONES DE SOFTWARE\c4-model-design-master\c4-mod
 D:\CICLO 4 FABRIZIO\DISEÑO Y PATRONES DE SOFTWARE\c4-model-design-master\c4-model-design-master\c4-model-design\obj\Debug\net6.0\c4-model-design.pdb
 D:\CICLO 4 FABRIZIO\DISEÑO Y PATRONES DE SOFTWARE\c4-model-design-master\c4-model-design-master\c4-model-design\obj\Debug\net6.0\c4-model-design.genruntimeconfig.cache
 D:\CICLO 4 FABRIZIO\DISEÑO Y PATRONES DE SOFTWARE\c4-model-design-master\c4-model-design-master\c4-model-design\obj\Debug\net6.0\ref\c4-model-design.dll
+D:\CICLO 4 FABRIZIO\DISEÑO Y PATRONES DE SOFTWARE\DIAGRAMAS REPOSITORIO\c4-model-design-master\c4-model-design-master\c4-model-design\bin\Debug\net6.0\c4-model-design.exe
+D:\CICLO 4 FABRIZIO\DISEÑO Y PATRONES DE SOFTWARE\DIAGRAMAS REPOSITORIO\c4-model-design-master\c4-model-design-master\c4-model-design\bin\Debug\net6.0\c4-model-design.deps.json
+D:\CICLO 4 FABRIZIO\DISEÑO Y PATRONES DE SOFTWARE\DIAGRAMAS REPOSITORIO\c4-model-design-master\c4-model-design-master\c4-model-design\bin\Debug\net6.0\c4-model-design.runtimeconfig.json
+D:\CICLO 4 FABRIZIO\DISEÑO Y PATRONES DE SOFTWARE\DIAGRAMAS REPOSITORIO\c4-model-design-master\c4-model-design-master\c4-model-design\bin\Debug\net6.0\c4-model-design.dll
+D:\CICLO 4 FABRIZIO\DISEÑO Y PATRONES DE SOFTWARE\DIAGRAMAS REPOSITORIO\c4-model-design-master\c4-model-design-master\c4-model-design\bin\Debug\net6.0\c4-model-design.pdb
+D:\CICLO 4 FABRIZIO\DISEÑO Y PATRONES DE SOFTWARE\DIAGRAMAS REPOSITORIO\c4-model-design-master\c4-model-design-master\c4-model-design\bin\Debug\net6.0\Newtonsoft.Json.dll
+D:\CICLO 4 FABRIZIO\DISEÑO Y PATRONES DE SOFTWARE\DIAGRAMAS REPOSITORIO\c4-model-design-master\c4-model-design-master\c4-model-design\bin\Debug\net6.0\Structurizr.Client.dll
+D:\CICLO 4 FABRIZIO\DISEÑO Y PATRONES DE SOFTWARE\DIAGRAMAS REPOSITORIO\c4-model-design-master\c4-model-design-master\c4-model-design\bin\Debug\net6.0\Structurizr.Core.dll
+D:\CICLO 4 FABRIZIO\DISEÑO Y PATRONES DE SOFTWARE\DIAGRAMAS REPOSITORIO\c4-model-design-master\c4-model-design-master\c4-model-design\obj\Debug\net6.0\c4-model-design.csproj.AssemblyReference.cache
+D:\CICLO 4 FABRIZIO\DISEÑO Y PATRONES DE SOFTWARE\DIAGRAMAS REPOSITORIO\c4-model-design-master\c4-model-design-master\c4-model-design\obj\Debug\net6.0\c4-model-design.GeneratedMSBuildEditorConfig.editorconfig
+D:\CICLO 4 FABRIZIO\DISEÑO Y PATRONES DE SOFTWARE\DIAGRAMAS REPOSITORIO\c4-model-design-master\c4-model-design-master\c4-model-design\obj\Debug\net6.0\c4-model-design.AssemblyInfoInputs.cache
+D:\CICLO 4 FABRIZIO\DISEÑO Y PATRONES DE SOFTWARE\DIAGRAMAS REPOSITORIO\c4-model-design-master\c4-model-design-master\c4-model-design\obj\Debug\net6.0\c4-model-design.AssemblyInfo.cs
+D:\CICLO 4 FABRIZIO\DISEÑO Y PATRONES DE SOFTWARE\DIAGRAMAS REPOSITORIO\c4-model-design-master\c4-model-design-master\c4-model-design\obj\Debug\net6.0\c4-model-design.csproj.CoreCompileInputs.cache
+D:\CICLO 4 FABRIZIO\DISEÑO Y PATRONES DE SOFTWARE\DIAGRAMAS REPOSITORIO\c4-model-design-master\c4-model-design-master\c4-model-design\obj\Debug\net6.0\c4-model-design.csproj.CopyComplete
+D:\CICLO 4 FABRIZIO\DISEÑO Y PATRONES DE SOFTWARE\DIAGRAMAS REPOSITORIO\c4-model-design-master\c4-model-design-master\c4-model-design\obj\Debug\net6.0\c4-model-design.dll
+D:\CICLO 4 FABRIZIO\DISEÑO Y PATRONES DE SOFTWARE\DIAGRAMAS REPOSITORIO\c4-model-design-master\c4-model-design-master\c4-model-design\obj\Debug\net6.0\refint\c4-model-design.dll
+D:\CICLO 4 FABRIZIO\DISEÑO Y PATRONES DE SOFTWARE\DIAGRAMAS REPOSITORIO\c4-model-design-master\c4-model-design-master\c4-model-design\obj\Debug\net6.0\c4-model-design.pdb
+D:\CICLO 4 FABRIZIO\DISEÑO Y PATRONES DE SOFTWARE\DIAGRAMAS REPOSITORIO\c4-model-design-master\c4-model-design-master\c4-model-design\obj\Debug\net6.0\c4-model-design.genruntimeconfig.cache
+D:\CICLO 4 FABRIZIO\DISEÑO Y PATRONES DE SOFTWARE\DIAGRAMAS REPOSITORIO\c4-model-design-master\c4-model-design-master\c4-model-design\obj\Debug\net6.0\ref\c4-model-design.dll

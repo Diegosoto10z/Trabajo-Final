@@ -56,8 +56,8 @@ namespace c4_model_design
 
 			Monitoring.Uses(containerDiagram.Database, "Usa", "");
 			Monitoring.Uses(this.SharedKernel, "Usa", "");
-			Monitoring.Uses(contextDiagram.GoogleMaps, "Usa", "");
-			Monitoring.Uses(contextDiagram.AircraftSystem, "Usa", "");
+			Monitoring.Uses(contextDiagram.Tarjetas_Credito_Debito, "Usa", "");
+			Monitoring.Uses(contextDiagram.Redes_Sociales, "Usa", "");
 			
 			Vaccines.Uses(containerDiagram.Database, "Usa", "");
 			Vaccines.Uses(this.SharedKernel, "Usa", "");
@@ -68,8 +68,8 @@ namespace c4_model_design
             Payments.Uses(containerDiagram.DatabaseNoSQL, "Usa", "");
             Payments.Uses(this.SharedKernel, "Usa", "");
 
-            Payments.Uses(contextDiagram.SendGrid, "Usa", "");
-            Payments.Uses(this.SharedKernel, "Usa", "");
+            //Payments.Uses(contextDiagram.SendGrid, "Usa", "");
+            //Payments.Uses(this.SharedKernel, "Usa", "");
         }
 
         private void ApplyStyles() {
@@ -95,9 +95,9 @@ namespace c4_model_design
 			componentView.Title = title;
 			componentView.Add(containerDiagram.Database);
             componentView.Add(containerDiagram.DatabaseNoSQL);
-            componentView.Add(contextDiagram.SendGrid);
-            componentView.Add(contextDiagram.AircraftSystem);
-			componentView.Add(contextDiagram.GoogleMaps);
+            //componentView.Add(contextDiagram.SendGrid);
+            componentView.Add(contextDiagram.Redes_Sociales);
+			componentView.Add(contextDiagram.Tarjetas_Credito_Debito);
 			componentView.AddAllComponents();
 		}
 	}

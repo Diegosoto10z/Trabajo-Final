@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\CICLO 4 FABRIZIO\\DISEÑO Y PATRONES DE SOFTWARE\\c4-model-design-master\\c4-model-design-master\\c4-model-design\\c4-model-design.csproj": {}
+    "D:\\CICLO 4 FABRIZIO\\DISEÑO Y PATRONES DE SOFTWARE\\DIAGRAMAS REPOSITORIO\\c4-model-design-master\\c4-model-design-master\\c4-model-design\\c4-model-design.csproj": {}
   },
   "projects": {
-    "D:\\CICLO 4 FABRIZIO\\DISEÑO Y PATRONES DE SOFTWARE\\c4-model-design-master\\c4-model-design-master\\c4-model-design\\c4-model-design.csproj": {
+    "D:\\CICLO 4 FABRIZIO\\DISEÑO Y PATRONES DE SOFTWARE\\DIAGRAMAS REPOSITORIO\\c4-model-design-master\\c4-model-design-master\\c4-model-design\\c4-model-design.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\CICLO 4 FABRIZIO\\DISEÑO Y PATRONES DE SOFTWARE\\c4-model-design-master\\c4-model-design-master\\c4-model-design\\c4-model-design.csproj",
+        "projectUniqueName": "D:\\CICLO 4 FABRIZIO\\DISEÑO Y PATRONES DE SOFTWARE\\DIAGRAMAS REPOSITORIO\\c4-model-design-master\\c4-model-design-master\\c4-model-design\\c4-model-design.csproj",
         "projectName": "c4-model-design",
-        "projectPath": "D:\\CICLO 4 FABRIZIO\\DISEÑO Y PATRONES DE SOFTWARE\\c4-model-design-master\\c4-model-design-master\\c4-model-design\\c4-model-design.csproj",
+        "projectPath": "D:\\CICLO 4 FABRIZIO\\DISEÑO Y PATRONES DE SOFTWARE\\DIAGRAMAS REPOSITORIO\\c4-model-design-master\\c4-model-design-master\\c4-model-design\\c4-model-design.csproj",
         "packagesPath": "C:\\Users\\EQUIPO\\.nuget\\packages\\",
-        "outputPath": "D:\\CICLO 4 FABRIZIO\\DISEÑO Y PATRONES DE SOFTWARE\\c4-model-design-master\\c4-model-design-master\\c4-model-design\\obj\\",
+        "outputPath": "D:\\CICLO 4 FABRIZIO\\DISEÑO Y PATRONES DE SOFTWARE\\DIAGRAMAS REPOSITORIO\\c4-model-design-master\\c4-model-design-master\\c4-model-design\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\EQUIPO\\AppData\\Roaming\\NuGet\\NuGet.Config",

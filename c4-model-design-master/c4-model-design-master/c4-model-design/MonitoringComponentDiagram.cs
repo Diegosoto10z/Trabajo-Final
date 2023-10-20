@@ -12,7 +12,7 @@ namespace c4_model_design
         public Component InterfaceLayer { get; private set; }
         public Component ApplicationLayer { get; private set; }
         public Component InfrastructureLayer { get; private set; }
-        public Component GoogleMapsConnector { get; private set; }
+        public Component Tarjetas_Credito_DebitoConnector { get; private set; }
 
         public MonitoringComponentDiagram(C4 c4, ContextDiagram contextDiagram, ContainerDiagram containerDiagram)
 		{
@@ -34,7 +34,7 @@ namespace c4_model_design
             InterfaceLayer = containerDiagram.ApiRest.AddComponent("Interface Layer Monitoring", "", "NodeJS (NestJS)");
             ApplicationLayer = containerDiagram.ApiRest.AddComponent("Application Layer Monitoring", "", "NodeJS (NestJS)");
             InfrastructureLayer = containerDiagram.ApiRest.AddComponent("Infrastructure Layer Monitoring", "", "NodeJS (NestJS)");
-            GoogleMapsConnector = containerDiagram.ApiRest.AddComponent("Google Maps Connector", "", "NodeJS (NestJS)");
+            Tarjetas_Credito_DebitoConnector = containerDiagram.ApiRest.AddComponent("Google Maps Connector", "", "NodeJS (NestJS)");
         }
 
         private void AddRelationships() {
@@ -43,9 +43,9 @@ namespace c4_model_design
             ApplicationLayer.Uses(InfrastructureLayer, "", "");
             InfrastructureLayer.Uses(DomainLayer, "", "");
             InfrastructureLayer.Uses(containerDiagram.Database, "Usa", "");
-            InfrastructureLayer.Uses(GoogleMapsConnector, "", "");
-            GoogleMapsConnector.Uses(contextDiagram.GoogleMaps, "", "JSON/HTTPS");
-            InfrastructureLayer.Uses(contextDiagram.AircraftSystem, "JSON/HTTPS");
+            InfrastructureLayer.Uses(Tarjetas_Credito_DebitoConnector, "", "");
+            Tarjetas_Credito_DebitoConnector.Uses(contextDiagram.Tarjetas_Credito_Debito, "", "JSON/HTTPS");
+            InfrastructureLayer.Uses(contextDiagram.Redes_Sociales, "JSON/HTTPS");
 		}
 
 		private void ApplyStyles() {
@@ -58,7 +58,7 @@ namespace c4_model_design
             InterfaceLayer.AddTags(this.componentTag);
             ApplicationLayer.AddTags(this.componentTag);
             InfrastructureLayer.AddTags(this.componentTag);
-            GoogleMapsConnector.AddTags(this.componentTag);
+            Tarjetas_Credito_DebitoConnector.AddTags(this.componentTag);
         }
 
 		private void CreateView() {
@@ -66,13 +66,13 @@ namespace c4_model_design
 			ComponentView componentView = c4.ViewSet.CreateComponentView(containerDiagram.ApiRest, title, title);
 			componentView.Title = title;
 			componentView.Add(containerDiagram.Database);
-			componentView.Add(contextDiagram.AircraftSystem);
-			componentView.Add(contextDiagram.GoogleMaps);
+			componentView.Add(contextDiagram.Redes_Sociales);
+			componentView.Add(contextDiagram.Tarjetas_Credito_Debito);
 			componentView.Add(this.DomainLayer);
 			componentView.Add(this.InterfaceLayer);
 			componentView.Add(this.ApplicationLayer);
 			componentView.Add(this.InfrastructureLayer);
-            componentView.Add(this.GoogleMapsConnector);
+            componentView.Add(this.Tarjetas_Credito_DebitoConnector);
         }
 	}
 }
