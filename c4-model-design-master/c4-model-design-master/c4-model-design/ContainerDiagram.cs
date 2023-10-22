@@ -29,8 +29,8 @@ namespace c4_model_design
 
 		private void AddContainers()
 		{
-			MobileApplication = contextDiagram.Plataforma_Tu_Voz_Se_Escucha.AddContainer("Mobile App", "Permite a los usuarios visualizar un dashboard con el resumen de toda la información del traslado de los lotes de vacunas.", "Swift UI");
-			WebApplication = contextDiagram.Plataforma_Tu_Voz_Se_Escucha.AddContainer("Web App", "Permite a los usuarios visualizar un dashboard con el resumen de toda la información del traslado de los lotes de vacunas.", "React");
+			MobileApplication = contextDiagram.Plataforma_Tu_Voz_Se_Escucha.AddContainer("Mobile App", "Permite a los usuarios visualizar todos los foros y comunicarse entre ellos.", "Swift UI");
+			WebApplication = contextDiagram.Plataforma_Tu_Voz_Se_Escucha.AddContainer("Web App", "Permite visualizar todos los foros y comunicarse entre ellos .", "React");
 			LandingPage = contextDiagram.Plataforma_Tu_Voz_Se_Escucha.AddContainer("Landing Page", "", "React");
 			ApiRest = contextDiagram.Plataforma_Tu_Voz_Se_Escucha.AddContainer("API REST", "API REST", "NodeJS (NestJS) port 8080");
 			Database = contextDiagram.Plataforma_Tu_Voz_Se_Escucha.AddContainer("DB", "", "MySQL Server RDS AWS");
@@ -46,14 +46,23 @@ namespace c4_model_design
 			contextDiagram.Encargado_Municipal.Uses(WebApplication, "Consulta");
 			contextDiagram.Encargado_Municipal.Uses(LandingPage, "Consulta");
 
-			MobileApplication.Uses(ApiRest, "API Request", "JSON/HTTPS");
+            contextDiagram.Gobiernos_Locales.Uses(MobileApplication, "Consulta");
+            contextDiagram.Gobiernos_Locales.Uses(WebApplication, "Consulta");
+            contextDiagram.Gobiernos_Locales.Uses(LandingPage, "Consulta");
+
+            contextDiagram.Medios_De_Comunicacion.Uses(MobileApplication, "Consulta");
+            contextDiagram.Medios_De_Comunicacion.Uses(WebApplication, "Consulta");
+            contextDiagram.Medios_De_Comunicacion.Uses(LandingPage, "Consulta");
+
+
+            MobileApplication.Uses(ApiRest, "API Request", "JSON/HTTPS");
 			WebApplication.Uses(ApiRest, "API Request", "JSON/HTTPS");
 
             ApiRest.Uses(Database, "", "");
             ApiRest.Uses(DatabaseNoSQL, "", "");
             ApiRest.Uses(contextDiagram.Tarjetas_Credito_Debito, "API Request", "JSON/HTTPS");
             ApiRest.Uses(contextDiagram.Redes_Sociales, "API Request", "JSON/HTTPS");
-            //ApiRest.Uses(contextDiagram.SendGrid, "API Request", "JSON/HTTPS");
+            ApiRest.Uses(contextDiagram.Email, "API Request", "JSON/HTTPS");
         }
 
 		private void ApplyStyles() {
