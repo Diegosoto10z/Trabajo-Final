@@ -8,7 +8,8 @@ namespace c4_model_design
 		public SoftwareSystem Plataforma_Tu_Voz_Se_Escucha { get; private set; }
 		public SoftwareSystem Tarjetas_Credito_Debito { get; private set; }
 		public SoftwareSystem Redes_Sociales { get; private set; }
-		public Person Ciudadano { get; private set; }
+        public SoftwareSystem Email { get; private set; }
+        public Person Ciudadano { get; private set; }
 		public Person Encargado_Municipal { get; private set; }
         public Person Gobiernos_Locales { get; private set; }
         public Person Medios_De_Comunicacion { get; private set; }
@@ -44,9 +45,9 @@ namespace c4_model_design
 		private void AddSoftwareSystems()
 		{
 			Plataforma_Tu_Voz_Se_Escucha = c4.Model.AddSoftwareSystem("Plataforma Tu Voz Se Escucha", "Plataforma que permite la union y comunicacion entre los ciudadnos distritales en Lima Metropolitana y sus respectivos municipios");
-			Tarjetas_Credito_Debito = c4.Model.AddSoftwareSystem("Tarjetas Credito/Debito", "Medios de pago disponibles para tramites dentro de la plataforma");
+			Tarjetas_Credito_Debito = c4.Model.AddSoftwareSystem("Stripe", "Medios de pago disponibles para tramites dentro de la plataforma");
 			Redes_Sociales = c4.Model.AddSoftwareSystem("Redes Sociales", "Funcionalidad para poder compartir noticias o informes de la plataforma hacia redes sociales populares");
-			//SendGrid = c4.Model.AddSoftwareSystem("Send Grid", "Permite enviar correos electronicos.");
+			Email = c4.Model.AddSoftwareSystem("Email", "Actualización de la situación de los foros y transacciones vía correo electrónico.");
 		}
 
 		private void AddRelationships() {
@@ -58,7 +59,7 @@ namespace c4_model_design
 
             Plataforma_Tu_Voz_Se_Escucha.Uses(Redes_Sociales, "Publicacion de noticias o informes");
 			Plataforma_Tu_Voz_Se_Escucha.Uses(Tarjetas_Credito_Debito, "Procesamiento De Pagos");
-			//Plataforma_Tu_Voz_Se_Escucha.Uses(SendGrid,"");
+			Plataforma_Tu_Voz_Se_Escucha.Uses(Email,"Envío de correos electrónicos a los usuarios");
 		}
 
 		private void ApplyStyles() {
@@ -74,7 +75,7 @@ namespace c4_model_design
             styles.Add(new ElementStyle(nameof(Plataforma_Tu_Voz_Se_Escucha)) { Background = "#008f39", Color = "#ffffff", Shape = Shape.RoundedBox });
 			styles.Add(new ElementStyle(nameof(Tarjetas_Credito_Debito)) { Background = "#90714c", Color = "#ffffff", Shape = Shape.RoundedBox });
 			styles.Add(new ElementStyle(nameof(Redes_Sociales)) { Background = "#00BFFF", Color = "#ffffff", Shape = Shape.RoundedBox });
-            //styles.Add(new ElementStyle(nameof(SendGrid)) { Background = "#8A2BE2", Color = "#ffffff", Shape = Shape.RoundedBox });
+            styles.Add(new ElementStyle(nameof(Email)) { Background = "#8A2BE2", Color = "#ffffff", Shape = Shape.RoundedBox });
         }
 
 		private void SetTags()
@@ -87,7 +88,7 @@ namespace c4_model_design
             Plataforma_Tu_Voz_Se_Escucha.AddTags(nameof(Plataforma_Tu_Voz_Se_Escucha));
 			Tarjetas_Credito_Debito.AddTags(nameof(Tarjetas_Credito_Debito));
 			Redes_Sociales.AddTags(nameof(Redes_Sociales));
-			//SendGrid.AddTags(nameof(SendGrid));
+			Email.AddTags(nameof(Email));
 		}
 
 		private void CreateView() {
