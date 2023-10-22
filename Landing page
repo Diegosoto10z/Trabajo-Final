@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Voz se Escucha</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #007bff;
+            color: #fff;
+            text-align: left;
+            padding: 20px 0 20px 20px;
+        }
+        h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            margin-top: 20px;
+            text-align: justify;
+            height: 100%;
+            overflow: auto;
+        }
+        p {
+            font-size: 18px;
+        }
+        .social-buttons {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .social-button {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-decoration: none;
+            padding: 10px;
+            background-color: #3498db;
+            color: #fff;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .facebook-button {
+            border: 2px solid #3b5998;
+            padding: 15px;
+            background-color: #3b5998;
+            transition: background-color 0.3s;
+        }
+        .social-button:hover, .facebook-button:hover {
+            background-color: #007bff;
+        }
+        .social-button img {
+            width: 100px;
+            height: 100px;
+        }
+        .benefits-container {
+            display: flex;
+            justify-content: space-around;
+        }
+        .benefit-box {
+            background-color: #f3f3f3;
+            padding: 20px;
+            border-radius: 5px; /* Redondear los márgenes */
+            text-align: center;
+            margin: 10px;
+            width: 30%;
+            transition: transform 0.2s;
+            cursor: pointer;
+        }
+        .benefit-box:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        .features {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .features h2 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .feature-box {
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-radius: 5px; /* Redondear los márgenes */
+            text-align: center;
+            margin: 10px;
+            flex: 1;
+            transition: transform 0.2s;
+            cursor: pointer;
+        }
+        .feature-box:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        .feature-box p {
+            color: #000;
+        }
+        .support {
+            margin-top: 40px;
+            text-align: center;
+        }
+        .support p {
+            font-size: 24px;
+        }
+        footer {
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tu Voz se Escucha</h1>
+        <p>Ayudamos a hacer del mundo un lugar mejor. ¡Únete a nosotros y haz la diferencia!</p>
+    </header>
+    <div class="container">
+        <h2>Objetivo del Proyecto</h2>
+        <p>
+            "Tu Voz se Escucha" busca estrechar la comunicación entre gobiernos locales y residentes, mejorando la calidad de vida de los habitantes de Lima Metropolitana.
+        </p>
+        <h2>Beneficios del Proyecto</h2>
+        <div class="benefits-container">
+            <div class="benefit-box">
+                <p>Comunicación efectiva entre gobiernos y ciudadanos.</p>
+            </div>
+            <div class="benefit-box">
+                <p>Resolución de problemas de seguridad y calidad pública.</p>
+            </div>
+            <div class="benefit-box">
+                <p>Identificación y solución de problemas estructurales.</p>
+            </div>
+        </div>
+
+        <div class="features">
+            <h2>Características que nos Diferencian</h2>
+        </div>
+        <div class="features">
+            <div class="feature-box">
+                <p>Participación activa de los ciudadanos en la toma de decisiones.</p>
+            </div>
+            <div class="feature-box">
+                <p>Transparencia en informes y uso de recursos.</p>
+            </div>
+            <div class="feature-box">
+                <p>Utilización de tecnología de vanguardia.</p>
+            </div>
+            <div class="feature-box">
+                <p>Medición cuantitativa del impacto en la calidad de vida.</p>
+            </div>
+            <div class="feature-box">
+                <p>Colaboración con organizaciones locales y la comunidad.</p>
+            </div>
+        </div>
+
+        <div class="support">
+            <p>Para consultas o comunicarse, llame al: <a href="tel:+51987654321">+51 987 654 321</a></p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2023 Tu Voz se Escucha</p>
+    </footer>
+</body>
+</html>
